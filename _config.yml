@@ -1,5 +1,5 @@
 title: "Fei's blog"
-description: 个人博客
+description: "ʕ•̫͡•ʕ•̫͡•ʔ•̫͡•ʔ•̫͡•ʕ•̫͡•ʔ•̫͡•ʕ•̫͡•ʕ•̫͡•ʔ•̫͡•ʔ•̫͡•ʕ•̫͡•ʔ•̫͡•ʔ"
 baseurl: ""  # 如果您的站点位于 username.github.io，保持为空
 url: "https://yourusername.github.io"  # 替换为您的 GitHub Pages URL
 
@@ -13,6 +13,8 @@ navigation:
     url: /
   - title: Posts
     url: /posts
+  - title: Travel Log
+    url: /travel/
   - title: Support
     url: /support
 
@@ -36,8 +38,8 @@ social:
     url: https://www.youtube.com/@fei.0x7c7
 
 # 分页设置
-paginate: 10
-paginate_path: "/posts/page:num/"
+paginate: 5
+paginate_path: "/page:num/"
 
 # 其他Jekyll设置
 markdown: kramdown
