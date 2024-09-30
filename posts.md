@@ -1,10 +1,11 @@
 ---
-layout: home
-title: Latest Posts
+layout: page
+title: All Posts
+permalink: /posts/
 ---
 
 <ul class="post-list">
-  {% for post in site.posts limit:10 %}
+  {% for post in site.posts %}
     <li>
       <span class="post-meta">{{ post.date | date: "%B %d, %Y" }}</span>
       <h3>

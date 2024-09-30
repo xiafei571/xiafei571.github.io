@@ -1,14 +1,18 @@
-title: Blog Way
-description: Clean & Elegant Responsive Theme
-baseurl: ""
-url: "https://yourusername.github.io"
+title: "Fei's blog"
+description: 个人博客
+baseurl: ""  # 如果您的站点位于 username.github.io，保持为空
+url: "https://yourusername.github.io"  # 替换为您的 GitHub Pages URL
 
-# 添加导航栏项目
+# 在本地开发时使用相对 URL
+development:
+  url: ""
+
+# 修改导航栏项目
 navigation:
   - title: Home
     url: /
-  - title: Blog
-    url: /blog
+  - title: Posts
+    url: /posts
   - title: Support
     url: /support
 
@@ -35,7 +39,7 @@ social:
 
 # 分页设置
 paginate: 10
-paginate_path: "/blog/page:num/"
+paginate_path: "/posts/page:num/"
 
 # 其他Jekyll设置
 markdown: kramdown
@@ -44,3 +48,5 @@ plugins:
   - jekyll-feed
 
 theme: minima
+
+# 其他设置保持不变

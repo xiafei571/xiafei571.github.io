@@ -2,26 +2,29 @@
 layout: default
 ---
 
-<div class="home">
-  {{ content }}
+<div class="home-wrapper">
+  <div class="home-main">
+    <h1 class="page-heading">{{ page.title }}</h1>
 
-  {% if site.posts.size > 0 %}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-      {% for post in site.posts %}
-      <li>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        <span class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</span>
-        {% if site.show_excerpts %}
-          {{ post.excerpt }}
-        {% endif %}
-      </li>
-      {% endfor %}
-    </ul>
-  {% endif %}
+    {{ content }}
 
+    {%- if site.posts.size > 0 -%}
+      <h3 class="post-list-heading">
+        <a href="{{ '/posts' | relative_url }}">More Posts...</a>
+      </h3>
+    {%- endif -%}
+  </div>
+
+  <div class="home-sidebar">
+    <div class="sidebar">
+      <h2>About the Author</h2>
+      <img src="{{ site.author.image | relative_url }}" alt="{{ site.author.name }}" class="author-image">
+      <p>{{ site.author.bio }}</p>
+      <div class="social-links">
+        {% for social in site.social %}
+          <a href="{{ social.url }}" target="_blank"><i class="{{ social.icon }}"></i></a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
 </div>
