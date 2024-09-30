@@ -197,11 +197,17 @@ table td { border: 1px solid #e8e8e8; }
 
 .home-wrapper { display: flex; flex-wrap: wrap; justify-content: space-between; }
 
-.home-main { width: 75%; }
+.home-main { width: 65%; }
 
-.home-sidebar { width: 20%; }
+.home-sidebar { width: 30%; }
 
 .sidebar { padding: 20px; background: #f9f9f9; border-radius: 5px; }
+.sidebar h3 { margin-top: 10px; margin-bottom: 5px; }
+.sidebar .author-info { margin: 10px 0; font-size: 14px; line-height: 1.4; }
+
+.social-links { margin-top: 15px; }
+.social-links a { margin-right: 10px; color: #828282; font-size: 18px; }
+.social-links a:hover { color: #333; }
 
 .post-list { list-style-type: none; padding: 0; }
 
@@ -217,16 +223,5 @@ table td { border: 1px solid #e8e8e8; }
 
 .post-list-heading a:hover { text-decoration: underline; }
 
-.author-image { width: 100%; max-width: 100px; height: auto; border-radius: 50%; margin-bottom: 10px; }
-
-.social-links { margin-top: 10px; }
-
-.social-links a { margin-right: 10px; color: #828282; }
-
 @media screen and (max-width: 800px) { .home-main, .home-sidebar { width: 100%; }
   .home-sidebar { margin-top: 30px; } }
-.page-content .post-list { list-style-type: none; padding: 0; }
-.page-content .post-list > li { margin-bottom: 30px; }
-.page-content .post-list .post-meta { font-size: 14px; color: #828282; }
-.page-content .post-list .post-link { display: block; font-size: 20px; margin-top: 5px; text-decoration: none; color: #333; }
-.page-content .post-list .post-link:hover { text-decoration: underline; }

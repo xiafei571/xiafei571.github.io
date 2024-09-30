@@ -18,22 +18,19 @@ navigation:
 
 # 作者信息
 author:
-  name: Your Name
-  bio: Maecenas facilisis, ipsum a dapibus mattis, risus sapien finibus velit, sed pharetra tellus sem ac ligula.
+  name: XIA FEI
+  profession: 👨‍💻 Software Engineer / Cloud Support Engineer / Research Associate
+  hobbies: 🏃‍♂️ Hiking / Trekking / Badminton / Cycling / PC Gaming
+  education: 🎓 UTokyo
+  location: 📍 Tokyo, Japan
   image: /assets/images/author.jpg
 
 # 社交媒体链接
 social:
-  - icon: fab fa-facebook-f
-    url: https://facebook.com/yourusername
-  - icon: fab fa-twitter
-    url: https://twitter.com/yourusername
   - icon: fab fa-linkedin-in
     url: https://linkedin.com/in/yourusername
   - icon: fab fa-instagram
     url: https://instagram.com/yourusername
-  - icon: fab fa-pinterest-p
-    url: https://pinterest.com/yourusername
   - icon: fab fa-youtube
     url: https://youtube.com/yourusername
 

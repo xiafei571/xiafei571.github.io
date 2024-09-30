@@ -1,2 +1,54 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-09-30T12:00:36+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Fei’s blog</title><subtitle>个人博客</subtitle><author><name>Your Name</name></author><entry><title type="html">Helloworld</title><link href="http://localhost:4000/2024/09/30/helloworld.html" rel="alternate" type="text/html" title="Helloworld" /><published>2024-09-30T00:00:00+09:00</published><updated>2024-09-30T00:00:00+09:00</updated><id>http://localhost:4000/2024/09/30/helloworld</id><content type="html" xml:base="http://localhost:4000/2024/09/30/helloworld.html"><![CDATA[<h2 id="hello-world">Hello world!</h2>]]></content><author><name>Your Name</name></author><summary type="html"><![CDATA[Hello world!]]></summary></entry><entry><title type="html">Test test test test</title><link href="http://localhost:4000/2024/09/29/test-test-test-test.html" rel="alternate" type="text/html" title="Test test test test" /><published>2024-09-29T00:00:00+09:00</published><updated>2024-09-29T00:00:00+09:00</updated><id>http://localhost:4000/2024/09/29/test%20test%20test%20test</id><content type="html" xml:base="http://localhost:4000/2024/09/29/test-test-test-test.html"><![CDATA[<h2 id="test">Test</h2>
-<p><img src="image.png" alt="alt text" /></p>]]></content><author><name>Your Name</name></author><summary type="html"><![CDATA[Test]]></summary></entry></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-09-30T12:36:52+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Fei’s blog</title><subtitle>个人博客</subtitle><author><name>XIA FEI</name></author><entry><title type="html">Smart tab, a chrome extension designed to enhance tab management</title><link href="http://localhost:4000/2024/09/30/Smart-Tab,-a-Chrome-extension-designed-to-enhance-tab-management.html" rel="alternate" type="text/html" title="Smart tab, a chrome extension designed to enhance tab management" /><published>2024-09-30T00:00:00+09:00</published><updated>2024-09-30T00:00:00+09:00</updated><id>http://localhost:4000/2024/09/30/Smart%20Tab,%20a%20Chrome%20extension%20designed%20to%20enhance%20tab%20management</id><content type="html" xml:base="http://localhost:4000/2024/09/30/Smart-Tab,-a-Chrome-extension-designed-to-enhance-tab-management.html"><![CDATA[<h1 id="smarttab">smartTab</h1>
+
+<p>smartTab is a Chrome extension designed to enhance tab management, providing users with efficient tools to save, restore, and organize their browsing sessions.</p>
+
+<p><img src="/assets/images/2024-09-30-smart-tab/screenshot.png" alt="smartTab Screenshot" /></p>
+
+<h2 id="installation">Installation</h2>
+
+<ol>
+  <li>Clone the repository:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/xiafei571/smartTab.git
+</code></pre></div>    </div>
+  </li>
+  <li>Open Chrome and navigate to <code class="language-plaintext highlighter-rouge">chrome://extensions/</code>.</li>
+  <li>Enable “Developer mode” (top right corner).</li>
+  <li>Click “Load unpacked” and select the smartTab directory.</li>
+</ol>
+
+<h2 id="features">Features</h2>
+
+<ol>
+  <li><strong>Automatic Tab Saving</strong>: Easily tidy up all your currently open tabs with a single click</li>
+  <li><strong>Tab Restoration</strong>: Easily reopen previously closed tabs.</li>
+  <li><strong>Organized Tab List</strong>: View closed tabs in a clean, organized list.</li>
+  <li><strong>Individual Tab Deletion</strong>: Remove specific tabs from the saved list.</li>
+  <li><strong>Bulk Clear Option</strong>: Clear all saved tabs at once.</li>
+  <li><strong>Expanded View</strong>: Access a full-window view of all closed tabs.</li>
+</ol>
+
+<h2 id="project-structure">Project Structure</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">manifest.json</code>: Extension configuration and permissions.</li>
+  <li><code class="language-plaintext highlighter-rouge">background.js</code>: Background processes for tab management and storage.</li>
+  <li><code class="language-plaintext highlighter-rouge">popup.html</code> &amp; <code class="language-plaintext highlighter-rouge">popup.js</code>: Main extension interface and its functionality.</li>
+  <li><code class="language-plaintext highlighter-rouge">closed_tabs.html</code> &amp; <code class="language-plaintext highlighter-rouge">closed_tabs.js</code>: Full-page view of closed tabs and its logic.</li>
+</ul>
+
+<h2 id="usage-guide">Usage Guide</h2>
+
+<ol>
+  <li>Install smartTab in Chrome.</li>
+  <li>Click the smartTab icon to access recently closed tabs.</li>
+  <li>Click on a listed tab to reopen it.</li>
+  <li>Remove individual tabs using the “clear” button.</li>
+</ol>
+
+<h2 id="contributing">Contributing</h2>
+
+<p>We welcome contributions to improve smartTab. Feel free to submit pull requests or open issues for enhancements or bug reports.</p>
+
+<h2 id="license">License</h2>
+
+<p>This project is licensed under the <a href="LICENSE">MIT License</a>.</p>]]></content><author><name>XIA FEI</name></author><summary type="html"><![CDATA[smartTab]]></summary></entry><entry><title type="html">Helloworld</title><link href="http://localhost:4000/2024/09/29/helloworld.html" rel="alternate" type="text/html" title="Helloworld" /><published>2024-09-29T00:00:00+09:00</published><updated>2024-09-29T00:00:00+09:00</updated><id>http://localhost:4000/2024/09/29/helloworld</id><content type="html" xml:base="http://localhost:4000/2024/09/29/helloworld.html"><![CDATA[<h2 id="hello-world">Hello world!</h2>]]></content><author><name>XIA FEI</name></author><summary type="html"><![CDATA[Hello world!]]></summary></entry></feed>

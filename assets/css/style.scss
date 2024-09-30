@@ -1,11 +1,7 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
 
 @import "{{ site.theme }}";
-
-// 其他自定义样式...
-// 确保在这里没有空行
 
 .home-wrapper {
   display: flex;
@@ -14,17 +10,42 @@
 }
 
 .home-main {
-  width: 75%;
+  width: 65%;
 }
 
 .home-sidebar {
-  width: 20%;
+  width: 30%;
 }
 
 .sidebar {
   padding: 20px;
   background: #f9f9f9;
   border-radius: 5px;
+
+  h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .author-info {
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+
+.social-links {
+  margin-top: 15px;
+
+  a {
+    margin-right: 10px;
+    color: #828282;
+    font-size: 18px;
+
+    &:hover {
+      color: #333;
+    }
+  }
 }
 
 .post-list {
@@ -63,23 +84,6 @@
   text-decoration: underline;
 }
 
-.author-image {
-  width: 100%;
-  max-width: 100px;
-  height: auto;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-.social-links {
-  margin-top: 10px;
-}
-
-.social-links a {
-  margin-right: 10px;
-  color: #828282;
-}
-
 // 响应式设计
 @media screen and (max-width: 800px) {
   .home-main, .home-sidebar {
@@ -88,35 +92,5 @@
   
   .home-sidebar {
     margin-top: 30px;
-  }
-}
-
-// 在文件末尾添加以下内容
-
-.page-content {
-  .post-list {
-    list-style-type: none;
-    padding: 0;
-
-    > li {
-      margin-bottom: 30px;
-    }
-
-    .post-meta {
-      font-size: 14px;
-      color: #828282;
-    }
-
-    .post-link {
-      display: block;
-      font-size: 20px;
-      margin-top: 5px;
-      text-decoration: none;
-      color: #333;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
   }
 }
