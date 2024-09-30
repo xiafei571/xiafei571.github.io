@@ -2,7 +2,7 @@
 
 smartTab is a Chrome extension designed to enhance tab management, providing users with efficient tools to save, restore, and organize their browsing sessions.
 
-![smartTab Screenshot](/assets/images/2024-09-30-smart-tab/screenshot.png)
+<img src="/assets/images/2024-09-30-smart-tab/screenshot.png" alt="smartTab Screenshot" style="max-width: 80%; height: auto;">
 
 ## Installation
 

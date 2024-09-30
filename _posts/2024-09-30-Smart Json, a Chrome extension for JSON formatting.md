@@ -2,7 +2,8 @@
 
 smartJson is a Chrome extension that provides a clean and efficient interface for JSON formatting with a convenient copy history feature.
 
-![smartJson Screenshot](/assets/images/2024-09-30-smart-json/screenshot-smart-json.png)
+<img src="/assets/images/2024-09-30-smart-json/screenshot-smart-json.png" alt="smartJson Screenshot" style="max-width: 80%; height: auto;">
+
 
 ## Installation
 
