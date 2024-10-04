@@ -2,8 +2,8 @@
 
 PhiloCard is a web application designed to generate and display philosophical quotes, aiming to inspire daily reflection and deep thinking.
 
-Repo Link: https://github.com/xiafei571/philoCard
-Website: https://philo-card.vercel.app/
+- Repo Link: `https://github.com/xiafei571/philoCard`
+- Website: `https://philo-card.vercel.app/`
 
 
 ## Project Description
@@ -19,9 +19,11 @@ PhiloCard randomly selects philosophical quotes from renowned thinkers and prese
 ```bash
 yarn install
 ```
+
 ```bash
 yarn build
 ```
+
 ```bash
 yarn start
 ```
