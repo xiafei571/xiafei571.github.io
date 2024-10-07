@@ -43,6 +43,9 @@ paginate_path: "/page:num/"
 
 # 其他Jekyll设置
 markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 plugins:
   - jekyll-paginate
   - jekyll-feed
@@ -50,3 +53,6 @@ plugins:
 theme: minima
 
 # 其他设置保持不变
+highlighter: rouge
+rouge:
+  style: github
