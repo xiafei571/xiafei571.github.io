@@ -1,7 +1,7 @@
 title: "Fei's blog"
 description: "ʕ•̫͡•ʕ•̫͡•ʔ•̫͡•ʔ•̫͡•ʕ•̫͡•ʔ•̫͡•ʕ•̫͡•ʕ•̫͡•ʔ•̫͡•ʔ•̫͡•ʕ•̫͡•ʔ•̫͡•ʔ"
-baseurl: ""  # 如果您的站点位于 username.github.io，保持为空
-url: "https://yourusername.github.io"  # 替换为您的 GitHub Pages URL
+baseurl: ""  # 将baseurl设置为空字符串
+url: "https://xiafei571.github.io"  # 设置你的域名
 
 # 在本地开发时使用相对 URL
 development:
@@ -56,3 +56,7 @@ theme: minima
 highlighter: rouge
 rouge:
   style: github
+
+# 确保特定文件被包含在生成的站点中
+include:
+  - google52a4f58ec2eaa5f6.html
