@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Semo App Released: My Journey Building an AI Companion from Scratch"
+title: "Semo App Released"
 date: 2025-03-10
 categories: [projects, app-development]
 tags: [ai, react-native, python, gcp, mobile-app]
@@ -34,38 +34,9 @@ Building Semo involved integrating various technologies:
   - Cloud SQL: For database management
   - Cloud Storage: For media and data storage
 
-## Key Features
-
-Semo comes packed with features designed to provide a meaningful companion experience:
-
-1. **Empathetic Conversations**: Natural language processing that understands context and emotion
-2. **Daily Mood Tracking**: Track your emotional state and receive insights over time
-3. **Personalized Guidance**: Custom advice based on your history and preferences
-4. **Topic Exploration**: Discuss anything from philosophy to everyday decisions
-5. **Voice Interaction**: Speak naturally with Semo as you would with a friend
-6. **Privacy-First Design**: Your data remains private and secure
-
 ## Development Journey
 
 Developing Semo from 0 to 1 has been both challenging and rewarding. The journey began with a simple prototype focusing on conversation capabilities, and evolved into a fully-featured companion app.
-
-### Challenges Overcome
-
-- **Empathy in AI**: Teaching an AI system to recognize and respond to emotional nuances
-- **Performance Optimization**: Ensuring the app remains responsive even with complex AI operations
-- **Cross-Platform Consistency**: Maintaining a seamless experience across different devices
-- **Scalable Architecture**: Building systems that could grow with increasing user demand
-- **Privacy Engineering**: Implementing strong privacy controls while maintaining personalization
-
-## Looking Forward
-
-This is just the beginning for Semo. Future updates will include:
-
-- Enhanced emotional intelligence capabilities
-- Expanded topic knowledge base
-- Community features for shared growth
-- Integration with other wellness platforms
-- Offline functionality improvements
 
 ## Try Semo Today
 

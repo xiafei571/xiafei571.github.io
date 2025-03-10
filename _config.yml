@@ -13,6 +13,8 @@ navigation:
     url: /
   - title: Posts
     url: /posts
+  - title: Resume
+    url: /resume/
   - title: Travel Log
     url: /travel/
   - title: Support
