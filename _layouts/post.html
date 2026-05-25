@@ -1,0 +1,194 @@
+---
+layout: default
+---
+
+<div class="post-page">
+  <aside class="post-sidebar" aria-label="Filtered posts">
+    <div class="post-sidebar-inner">
+      <h2 class="post-sidebar-heading">Posts</h2>
+      <p class="post-sidebar-filter" hidden></p>
+      <ul class="post-sidebar-list">
+        {% for post in site.posts %}
+          <li class="post-sidebar-item" data-categories="{{ post.categories | join: ',' | escape }}" data-tags="{{ post.tags | join: ',' | escape }}" data-url="{{ post.url | relative_url }}">
+            <a class="post-sidebar-link" href="{{ post.url | relative_url }}">
+              <span class="post-sidebar-title">{{ post.title | escape }}</span>
+              <span class="post-sidebar-date">{{ post.date | date: "%Y.%m.%d" }}</span>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+      <p class="post-sidebar-empty" hidden>No matching posts.</p>
+    </div>
+  </aside>
+
+  <article class="post-content-panel">
+    <header class="post-header">
+      <h1 class="post-title">{{ page.title | escape }}</h1>
+      <p class="post-meta">{{ page.date | date: "%Y年%m月%d日" }}</p>
+    </header>
+
+    <div class="post-content">
+      {{ content }}
+    </div>
+  </article>
+</div>
+
+<style>
+  .post-page {
+    align-items: flex-start;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: minmax(220px, 280px) minmax(0, 1fr);
+    margin-top: 1.5rem;
+  }
+  .post-sidebar {
+    position: sticky;
+    top: 1.5rem;
+  }
+  .post-sidebar-inner {
+    border-right: 1px solid #c9d8ea;
+    padding-right: 1rem;
+  }
+  .post-sidebar-heading {
+    color: #2c3e50;
+    font-size: 1.1rem;
+    margin: 0 0 0.75rem;
+  }
+  .post-sidebar-filter {
+    color: #666;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    margin: 0 0 0.75rem;
+  }
+  .post-sidebar-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .post-sidebar-item {
+    margin-bottom: 0.35rem;
+  }
+  .post-sidebar-item[hidden] {
+    display: none;
+  }
+  .post-sidebar-link {
+    border-radius: 6px;
+    color: #1e3a8a;
+    display: block;
+    padding: 0.45rem 0.55rem;
+    text-decoration: none;
+  }
+  .post-sidebar-link:hover,
+  .post-sidebar-link.is-current {
+    background: #e8f0fe;
+  }
+  .post-sidebar-title {
+    display: block;
+    font-size: 0.92rem;
+    line-height: 1.35;
+  }
+  .post-sidebar-date {
+    color: #666;
+    display: block;
+    font-size: 0.78rem;
+    margin-top: 0.15rem;
+  }
+  .post-sidebar-empty {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  .post-content-panel {
+    min-width: 0;
+  }
+  .post-header {
+    border-bottom: 1px solid #c9d8ea;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+  }
+  .post-title {
+    color: #2c3e50;
+    font-size: 2rem;
+    line-height: 1.25;
+    margin: 0 0 0.5rem;
+  }
+  .post-meta {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0;
+  }
+  .post-content img {
+    height: auto;
+    max-width: 100%;
+  }
+  @media screen and (max-width: 768px) {
+    .post-page {
+      grid-template-columns: 1fr;
+    }
+    .post-sidebar {
+      position: static;
+    }
+    .post-sidebar-inner {
+      border-bottom: 1px solid #c9d8ea;
+      border-right: 0;
+      padding-bottom: 1rem;
+      padding-right: 0;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const sidebarItems = Array.from(document.querySelectorAll('.post-sidebar-item'));
+    const sidebarLinks = Array.from(document.querySelectorAll('.post-sidebar-link'));
+    const filterSummary = document.querySelector('.post-sidebar-filter');
+    const emptyMessage = document.querySelector('.post-sidebar-empty');
+    const params = new URLSearchParams(window.location.search);
+    const splitValues = (value) => value.split(',').map((item) => item.trim()).filter(Boolean);
+    const selectedCategories = splitValues(params.get('categories') || '');
+    const selectedTags = splitValues(params.get('tags') || '');
+    const hasOverlap = (postValues, selectedValues) => selectedValues.length === 0 || selectedValues.some((value) => postValues.includes(value));
+
+    let visibleCount = 0;
+
+    sidebarItems.forEach((item) => {
+      const postCategories = splitValues(item.dataset.categories || '');
+      const postTags = splitValues(item.dataset.tags || '');
+      const isVisible = hasOverlap(postCategories, selectedCategories) && hasOverlap(postTags, selectedTags);
+      item.hidden = !isVisible;
+      if (isVisible) {
+        visibleCount += 1;
+      }
+    });
+
+    sidebarLinks.forEach((link) => {
+      const linkUrl = new URL(link.getAttribute('href'), window.location.origin);
+      if (selectedCategories.length > 0) {
+        linkUrl.searchParams.set('categories', selectedCategories.join(','));
+      }
+      if (selectedTags.length > 0) {
+        linkUrl.searchParams.set('tags', selectedTags.join(','));
+      }
+      link.href = `${linkUrl.pathname}${linkUrl.search}${linkUrl.hash}`;
+
+      if (linkUrl.pathname === window.location.pathname) {
+        link.classList.add('is-current');
+      }
+    });
+
+    if (filterSummary) {
+      const filterParts = [];
+      if (selectedCategories.length > 0) {
+        filterParts.push(`Categories: ${selectedCategories.join(', ')}`);
+      }
+      if (selectedTags.length > 0) {
+        filterParts.push(`Tags: ${selectedTags.join(', ')}`);
+      }
+      filterSummary.textContent = filterParts.join(' / ');
+      filterSummary.hidden = filterParts.length === 0;
+    }
+
+    if (emptyMessage) {
+      emptyMessage.hidden = visibleCount > 0;
+    }
+  });
+</script>

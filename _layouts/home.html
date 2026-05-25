@@ -41,7 +41,7 @@ layout: default
         {% for post in site.posts %}
           <li class="post-item" data-categories="{{ post.categories | join: ',' | escape }}" data-tags="{{ post.tags | join: ',' | escape }}">
             <h3 class="post-title">
-              <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+              <a class="post-link filter-preserving-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
             </h3>
             <span class="post-meta">{{ post.date | date: "%Y年%m月%d日" }}</span>
           </li>

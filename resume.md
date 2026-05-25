@@ -10,14 +10,17 @@ permalink: /resume/
 
 ## Objective
 
-I have 7+ years of total work experience and 3+ years of product development in Java. I completed my master's degree at the University of Tokyo in Sept 2021. Now I am working as a Software Development Engineer at EPAM Systems Japan and looking for a software engineering role.
+Software Engineer with 7+ years of experience across frontend and backend development. I combine strong software engineering fundamentals with AI-assisted development practices to improve productivity in coding, code review, debugging, and implementation planning. I completed my master's degree at the University of Tokyo in Sept 2021. Currently working as a Software Engineer at SmartNews.
 
 ## Technical Skills
 
-**Programming & Frameworks**: Java, Python, JavaScript, SSM (SpringMVC+Spring+Mybatis)  
-**Databases**: MySQL, Elasticsearch, Redis, Memcached  
-**Cloud & DevOps**: GCP, Linux, Git  
-**Other Skills**: Computer Science, Machine Learning, Software Engineering
+**Languages**: Java, Kotlin, Python, JavaScript, TypeScript, SQL  
+**Backend**: Spring Boot, Spring MVC, MyBatis, RESTful APIs, Hexagonal Architecture, Microservices  
+**Frontend**: React, React Native, HTML/CSS/JS, Ant Design  
+**Databases & Cache**: MySQL, Redis, Memcached, Elasticsearch  
+**Cloud & DevOps**: GCP, AWS, Kubernetes, Docker, Terraform, GitLab CI/CD, CircleCI  
+**Tools & Practices**: Git, Linux, Agile/Scrum, System Design, OpenAPI/Swagger API Definition, E2E  
+**AI-assisted Development**: Cursor, Claude Code, Gemini, and other AI tools for code analysis, debugging, implementation planning, and code review
 
 **Personal Projects**:
 - **Chrome Extensions**: Smart Json, Smart Tab
@@ -47,24 +50,28 @@ GPA: 3.3/4.0 (Programming, Software Engineering, Networking, OS, Database Techno
 
 ## Experience
 
-### EPAM Systems Japan — 2022.07 - present
+### SmartNews — 2025.09 - Present
+**Software Engineer**
 
-#### Software Development Engineer — 2024.08 - present
-- Work on Java Backend Development to provide IT solutions for UBS (Wealth management)
-- Rationalize practices of Agile Methodology in the development team
-- Partner with multiple functional roles/teams to ensure prompt and quality delivery
-- Collaborate with colleagues to maximize the potential of the technology investment
-- Participate in project delivery and outlining of the technical roadmap using combined team knowledge
+- Develop full-stack features for the SmartNews Ads Management platform, including frontend, backend, API design, and database-related implementation.
+- Participate in and lead technical design discussions with engineers, PMs, designers, and stakeholders to evaluate solutions and align implementation plans.
+- Review code from other engineers and provide feedback to improve code quality, maintainability, and test coverage.
+- Leverage AI-assisted development tools such as Claude Code, Cursor, Gemini, and others to improve productivity in code analysis, implementation planning, debugging, and pre-review.
 
-**Tech Stack**: Java JDK 1.8, Spring Boot, Oracle, Azure Cloud, Ansible, Gitlab, Linux, Autosys
+### EPAM Systems Japan — 2022.07 - 2025.08 (3y)
+
+#### Software Development Engineer — 2024.08 - 2025.08
+- Worked on Java backend development to provide IT solutions for UBS Wealth Management.
+- Participated in project delivery and technical roadmap discussions by collaborating with team members.
+
+**Tech Stack**: Java 8, Spring Boot, Oracle, Azure VM, GitLab, Autosys
 
 #### Google Cloud Platform(GCP) Support Engineer — 2022.07 - 2024.07 (2y)
-- Troubleshooting issues for GCP customers with a mix of debugging, log analysis, network analysis, system administration, documentation, reproducing the problem
-- Provide technical assistance and support as part of a global 24x7-support organization
-- Work closely with product teams to improve the product and make our customers successful
+- Troubleshot issues for GCP customers through debugging, log analysis, network analysis, system administration, documentation review, and issue reproduction.
+- Provided technical assistance as part of a global 24/7 support organization.
 
 **Awards & Honors**:
-- Monthly Performance Stars for Nov, Dec 2022, Jan, Feb 2023
+- Monthly Performance Stars for Nov 2022, Dec 2022, Jan 2023, and Feb 2023
 - 2023 Q1/Q2 Best Performance Award
 
 ### The University of Tokyo (Japan) — 2021.10 - 2022.06 (8m)

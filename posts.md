@@ -39,7 +39,7 @@ permalink: /posts/
     <li class="post-item" data-categories="{{ post.categories | join: ',' | escape }}" data-tags="{{ post.tags | join: ',' | escape }}">
       <span class="post-meta">{{ post.date | date: "%B %d, %Y" }}</span>
       <h3 class="post-title">
-        <a class="post-link" href="{{ post.url | relative_url }}">
+        <a class="post-link filter-preserving-link" href="{{ post.url | relative_url }}">
           {{ post.title | escape }}
         </a>
       </h3>
@@ -153,6 +153,7 @@ permalink: /posts/
     const posts = Array.from(document.querySelectorAll('.post-item'));
     const clearButton = document.querySelector('.filter-clear');
     const noPostsMessage = document.querySelector('.no-posts-message');
+    const filterPreservingLinks = Array.from(document.querySelectorAll('.filter-preserving-link'));
 
     const splitValues = (value) => value.split(',').map((item) => item.trim()).filter(Boolean);
     const hasOverlap = (postValues, selectedValues) => selectedValues.length === 0 || selectedValues.some((value) => postValues.includes(value));
@@ -180,6 +181,21 @@ permalink: /posts/
       if (noPostsMessage) {
         noPostsMessage.hidden = visibleCount > 0;
       }
+
+      filterPreservingLinks.forEach((link) => {
+        const linkUrl = new URL(link.getAttribute('href'), window.location.origin);
+        if (selectedCategories.length > 0) {
+          linkUrl.searchParams.set('categories', selectedCategories.join(','));
+        } else {
+          linkUrl.searchParams.delete('categories');
+        }
+        if (selectedTags.length > 0) {
+          linkUrl.searchParams.set('tags', selectedTags.join(','));
+        } else {
+          linkUrl.searchParams.delete('tags');
+        }
+        link.href = `${linkUrl.pathname}${linkUrl.search}${linkUrl.hash}`;
+      });
 
       if (updateUrl) {
         const url = new URL(window.location.href);
