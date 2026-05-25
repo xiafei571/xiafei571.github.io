@@ -1,8 +1,9 @@
 ---
+layout: post
 title: "AI Daily Briefing - 2026-05-25"
 date: 2026-05-25
-分类：daily-brief
-标签：AI
+categories: [daily-brief]
+tags: [ai]
 ---
 
 # 每日 AI 简报 - 2026-05-25
