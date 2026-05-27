@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "AI Daily Briefing - 2026-05-27"
-date: 2026-05-27 00:00:00 +0900
+date: 2026-05-27
 categories: [daily-brief]
 tags: [ai]
 ---
